@@ -1,0 +1,48 @@
+body {
+	overflow:hidden;
+}
+
+#container {
+  width: 1600px;
+  height: 800px;
+  position: relative;
+}
+
+#animate {
+	
+  position: absolute;
+}
+
+.gamewindow{
+	width:600px;
+	height:800px;
+}
+
+.walkingRight {
+  transform: scaleX(1);
+}
+
+.walkingLeft {
+  transform: scaleX(-1);
+}
+
+.city{
+	position: absolute;
+}
+.ridley{
+	top:10%;
+	left:25%;
+}
+
+.ridley_fireball {
+	position:absolute;
+  	width:80px;
+  	height:40px;
+}
+
+.city_container {
+	background-image:url('../assets/images/norfair.jpg');
+	position:absolute;
+	width:1600px;
+	height:800px;
+}
