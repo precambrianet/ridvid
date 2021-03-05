@@ -10,12 +10,15 @@ document.addEventListener("keyup", event => {
 
 document.addEventListener("keydown", event => {
 	console.log(event.keyCode)
+  if(event.keyCode == 32){
+    shoot()
+  }
   if(event.keyCode == 38){
   console.log("move up")
-  	move('y',-1);
+  	move('y',1);
   }else if(event.keyCode == 40){
   console.log("move down")
-   	move('y',1)
+   	move('y',-1);
   }else if(event.keyCode == 37){
   console.log("move left")
   	if(lastKeyPressed != 37){
@@ -37,6 +40,13 @@ document.addEventListener("keydown", event => {
   }
   // up: 38, dn: 40, l: 37, r: 39
 })
+
+function shoot(){
+  var holdingcellthing = document.getElementById("container")
+  var bam = new Image()
+
+  holdingcellthing.appendChild(bam)
+}
 
 
 function stop(){
